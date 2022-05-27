@@ -1,356 +1,364 @@
 
 
-# Chrome 插件离线下载备忘录
+  # Chrome 插件离线下载备忘录
 
-## 离线安装Chrome插件
+  ## 离线安装Chrome插件
 
-参考链接：https://mp.weixin.qq.com/s/cw3aq1uWyXUkyJFvMMmkdA
+  参考链接：https://mp.weixin.qq.com/s/cw3aq1uWyXUkyJFvMMmkdA
 
-Chrome网上应用店
+  Chrome网上应用店
 
-https://chrome.google.com/webstore/category/extensions?hl=en-US
+  https://chrome.google.com/webstore/category/extensions?hl=en-US
 
-例如：下载插件 Proxy SwitchyOmega
+  例如：下载插件 Proxy SwitchyOmega
 
-https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif?utm_source=chrome-ntp-icon
+  https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif?utm_source=chrome-ntp-icon
 
-从url中提取插件ID（ExtId），上面的插件id为 `gmmnidkpkgiohfdoenhpghbilmeeagjj`
+  从url中提取插件ID（ExtId），上面的插件id为 `gmmnidkpkgiohfdoenhpghbilmeeagjj`
 
-然后查看Chrome版本信息，`chrome://settings/help`
+  然后查看Chrome版本信息，`chrome://settings/help`
 
-`版本 101.0.4951.54（正式版本） (x86_64)`
+  `版本 101.0.4951.54（正式版本） (x86_64)`
 
-离线下载插件模板URL：
+  离线下载插件模板URL：
 
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=`<ChromeVer>`&acceptformat=crx2%2Ccrx3&x=id%3D`<ExtId>`%26uc
 
-将<ChromeVer>、<ExtId>替换成正确值。
 
-例如:https://clients2.google.com/service/update2/crx?response=redirect&prodversion=`101.0.4951.54`&acceptformat=crx2%2Ccrx3&x=id%3D`padekgcemlokbadohgkifijomclgjgif`%26uc
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=`<ChromeVer>`&acceptformat=crx2%2Ccrx3&x=id%3D`<ExtId>`%26uc
 
-## Proxy SwitchyOmega 2.5.21
 
-简介：轻松快捷地管理和切换多个代理设置。
 
-`chrome://extensions/`
-![](https://pora-images-1251578175.cos.ap-shanghai.myqcloud.com/MacOs-a2d5a9a5cf564b518f3fe006c7293184/20220528002719.png)
-插件`ID：padekgcemlokbadohgkifijomclgjgif`
-```bash
-#URL 编码后：
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dpadekgcemlokbadohgkifijomclgjgif%26uc
+  将<ChromeVer>、<ExtId>替换成正确值。
 
-#URL 解码后：
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2,crx3&x=id=padekgcemlokbadohgkifijomclgjgif&uc
-```
-下载完成后：[extension_2_5_21_0.crx](https://clients2.googleusercontent.com/crx/blobs/Acy1k0Y7IFBaSHHT2CgFAwy1GWcGqozTRdkVQmSI86SW2BDd_u2mRCc8tlasqJL_9xG3m7N3AIr6LoNKOTo3tF5qVMJ04in-KbITo7goRUEUnXOgb89aAMZSmuUhJqwvX9_HsJfvjM6-nFupFyim_Q/extension_2_5_21_0.crx)
-![](https://pora-images-1251578175.cos.ap-shanghai.myqcloud.com/MacOs-a2d5a9a5cf564b518f3fe006c7293184/20220528002825.png)
+  例如:
 
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=`101.0.4951.54`&acceptformat=crx2%2Ccrx3&x=id%3D`padekgcemlokbadohgkifijomclgjgif`%26uc
 
 
-为了后续方便知道是什么插件名字，需要重命名为  Proxy SwitchyOmega 2.5.21.crx
 
+  ## Proxy SwitchyOmega 2.5.21
 
+  简介：轻松快捷地管理和切换多个代理设置。
 
-##  Proxy SwitchySharp 1.10.7
+  `chrome://extensions/`
+  ![](https://pora-images-1251578175.cos.ap-shanghai.myqcloud.com/MacOs-a2d5a9a5cf564b518f3fe006c7293184/20220528002719.png)
+  插件`ID：padekgcemlokbadohgkifijomclgjgif`
+  ```bash
+  #URL 编码后：
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dpadekgcemlokbadohgkifijomclgjgif%26uc
 
-简介：轻松快捷地管理和切换多个代理设置。基于 "Proxy Switchy!" 和 "SwitchyPlus" 开发。
+  #URL 解码后：
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2,crx3&x=id=padekgcemlokbadohgkifijomclgjgif&uc
+  ```
+  下载完成后：[extension_2_5_21_0.crx](https://clients2.googleusercontent.com/crx/blobs/Acy1k0Y7IFBaSHHT2CgFAwy1GWcGqozTRdkVQmSI86SW2BDd_u2mRCc8tlasqJL_9xG3m7N3AIr6LoNKOTo3tF5qVMJ04in-KbITo7goRUEUnXOgb89aAMZSmuUhJqwvX9_HsJfvjM6-nFupFyim_Q/extension_2_5_21_0.crx)
+  ![](https://pora-images-1251578175.cos.ap-shanghai.myqcloud.com/MacOs-a2d5a9a5cf564b518f3fe006c7293184/20220528002825.png)
 
-`ID：dpplabbmogkhghncfbfdeeokoefdjegm`
 
-```bash
-# dpplabbmogkhghncfbfdeeokoefdjegm
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Ddpplabbmogkhghncfbfdeeokoefdjegm%26uc
-```
 
-## Anti-HoneyPot[By-4dogs.cn] 1.0.1
+  为了后续方便知道是什么插件名字，需要重命名为  Proxy SwitchyOmega 2.5.21.crx
 
-Anti-HoneyPot 1.0.1 拦截蜜罐收集用户信息
 
-ID：mcgakjkooclpijbmfeglihcngmaoobnf
 
-```bash
-# mcgakjkooclpijbmfeglihcngmaoobnf
-```
+  ##  Proxy SwitchySharp 1.10.7
 
-## JSON Formatter 0.6.2
+  简介：轻松快捷地管理和切换多个代理设置。基于 "Proxy Switchy!" 和 "SwitchyPlus" 开发。
 
-格式化json，view 更直观。
+  `ID：dpplabbmogkhghncfbfdeeokoefdjegm`
 
-Makes JSON easy to read. Open source.
+  ```bash
+  # dpplabbmogkhghncfbfdeeokoefdjegm
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Ddpplabbmogkhghncfbfdeeokoefdjegm%26uc
+  ```
 
-ID：bcjindcccaagfpapjjmafapmmgkkhgoa
+  ## Anti-HoneyPot[By-4dogs.cn] 1.0.1
 
-```bash
-# bcjindcccaagfpapjjmafapmmgkkhgoa
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dbcjindcccaagfpapjjmafapmmgkkhgoa%26uc
-```
+  Anti-HoneyPot 1.0.1 拦截蜜罐收集用户信息
 
-##  Shodan 1.1.0
+  ID：mcgakjkooclpijbmfeglihcngmaoobnf
 
-The Shodan plugin tells you where the website is hosted (country, city), who owns the IP and what other services/ ports are open.
+  ```bash
+  # mcgakjkooclpijbmfeglihcngmaoobnf
+  ```
 
-ID：jjalcfnidlmpjhdfepjhjbhnhkbgleap
+  ## JSON Formatter 0.6.2
 
-```bash
-# jjalcfnidlmpjhdfepjhjbhnhkbgleap
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Djjalcfnidlmpjhdfepjhjbhnhkbgleap%26uc
-```
+  格式化json，view 更直观。
 
-## Charset 0.5.5
+  Makes JSON easy to read. Open source.
 
-修改网站的默认编码
+  ID：bcjindcccaagfpapjjmafapmmgkkhgoa
 
-ID：oenllhgkiiljibhfagbfogdbchhdchml
+  ```bash
+  # bcjindcccaagfpapjjmafapmmgkkhgoa
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dbcjindcccaagfpapjjmafapmmgkkhgoa%26uc
+  ```
 
-```bash
-# oenllhgkiiljibhfagbfogdbchhdchml
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Doenllhgkiiljibhfagbfogdbchhdchml%26uc
-```
+  ##  Shodan 1.1.0
 
+  The Shodan plugin tells you where the website is hosted (country, city), who owns the IP and what other services/ ports are open.
 
+  ID：jjalcfnidlmpjhdfepjhjbhnhkbgleap
 
-## Adblock Plus - 3.13
+  ```bash
+  # jjalcfnidlmpjhdfepjhjbhnhkbgleap
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Djjalcfnidlmpjhdfepjhjbhnhkbgleap%26uc
+  ```
 
-免费的广告拦截器，阻止 YouTube™ 广告、弹出窗口并抵御恶意软件！
+  ## Charset 0.5.5
 
-ID：cfhdojbkjhnklbpkdaibdccddilifddb
+  修改网站的默认编码
 
-```bash
-# cfhdojbkjhnklbpkdaibdccddilifddb
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dcfhdojbkjhnklbpkdaibdccddilifddb%26uc
-```
+  ID：oenllhgkiiljibhfagbfogdbchhdchml
 
-## EditThisCookie 1.6.3
+  ```bash
+  # oenllhgkiiljibhfagbfogdbchhdchml
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Doenllhgkiiljibhfagbfogdbchhdchml%26uc
+  ```
 
-EditThisCookie是一个cookie管理器。您可以添加，删除，编辑，搜索，锁定和屏蔽cookies！
 
-ID：fngmhnnpilhplaeedifhccceomclgfbg
 
-```bash
-# fngmhnnpilhplaeedifhccceomclgfbg
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dfngmhnnpilhplaeedifhccceomclgfbg%26uc
-```
+  ## Adblock Plus - 3.13
 
-## Google Mail Checker 4.4.0
+  免费的广告拦截器，阻止 YouTube™ 广告、弹出窗口并抵御恶意软件！
 
-显示 Google Mail 收件箱中的未读邮件数。点击该按钮还可以打开您的收件箱。
+  ID：cfhdojbkjhnklbpkdaibdccddilifddb
 
-ID：mihcahmgecmbnbcchbopgniflfhgnkff
+  ```bash
+  # cfhdojbkjhnklbpkdaibdccddilifddb
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dcfhdojbkjhnklbpkdaibdccddilifddb%26uc
+  ```
 
-```bash
-# mihcahmgecmbnbcchbopgniflfhgnkff
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dmihcahmgecmbnbcchbopgniflfhgnkff%26uc
-```
+  ## EditThisCookie 1.6.3
 
-## Google 翻译 2.0.12
+  EditThisCookie是一个cookie管理器。您可以添加，删除，编辑，搜索，锁定和屏蔽cookies！
 
-浏览网页时可轻松查看翻译版本。由Google翻译小组提供。
+  ID：fngmhnnpilhplaeedifhccceomclgfbg
 
-ID：aapbdbdomjkkjkaonfhkkikfgjllcleb
+  ```bash
+  # fngmhnnpilhplaeedifhccceomclgfbg
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dfngmhnnpilhplaeedifhccceomclgfbg%26uc
+  ```
 
-```bash
-# aapbdbdomjkkjkaonfhkkikfgjllcleb
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Daapbdbdomjkkjkaonfhkkikfgjllcleb%26uc
-```
+  ## Google Mail Checker 4.4.0
 
-## MEGA 4.14.1
+  显示 Google Mail 收件箱中的未读邮件数。点击该按钮还可以打开您的收件箱。
 
-Secure Cloud Storage and Chat
+  ID：mihcahmgecmbnbcchbopgniflfhgnkff
 
-ID：bigefpfhnfcobdlfbedofhhaibnlghod
+  ```bash
+  # mihcahmgecmbnbcchbopgniflfhgnkff
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dmihcahmgecmbnbcchbopgniflfhgnkff%26uc
+  ```
 
-```bash
-# bigefpfhnfcobdlfbedofhhaibnlghod
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dbigefpfhnfcobdlfbedofhhaibnlghod%26uc
-```
+  ## Google 翻译 2.0.12
 
-## Octotree - GitHub code tree 7.5.0
+  浏览网页时可轻松查看翻译版本。由Google翻译小组提供。
 
-GitHub on steroids
+  ID：aapbdbdomjkkjkaonfhkkikfgjllcleb
 
-ID：bkhaagjahfmjljalopjnoealnfndnagc
+  ```bash
+  # aapbdbdomjkkjkaonfhkkikfgjllcleb
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Daapbdbdomjkkjkaonfhkkikfgjllcleb%26uc
+  ```
 
-```bash
-# bkhaagjahfmjljalopjnoealnfndnagc
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dbkhaagjahfmjljalopjnoealnfndnagc%26uc
-```
+  ## MEGA 4.14.1
 
-## Save as MHTML 0.3.7
+  Secure Cloud Storage and Chat
 
-编辑并以MHTL/MHT(MIME HTML)存档格式保存活动标签或选定区域，以获得一个干净的单文件备份。
+  ID：bigefpfhnfcobdlfbedofhhaibnlghod
 
-ID：ahgakckdonjmnpnegjcamhagackmjpei
+  ```bash
+  # bigefpfhnfcobdlfbedofhhaibnlghod
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dbigefpfhnfcobdlfbedofhhaibnlghod%26uc
+  ```
 
-```bash
-# ahgakckdonjmnpnegjcamhagackmjpei
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dahgakckdonjmnpnegjcamhagackmjpei%26uc
-```
+  ## Octotree - GitHub code tree 7.5.0
 
-## RSS Feed Reader 7.9.0
+  GitHub on steroids
 
-Get a simple overview of your RSS and Atom feeds in the toolbar
+  ID：bkhaagjahfmjljalopjnoealnfndnagc
 
-ID：pnjaodmkngahhkoihejjehlcdlnohgmp
+  ```bash
+  # bkhaagjahfmjljalopjnoealnfndnagc
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dbkhaagjahfmjljalopjnoealnfndnagc%26uc
+  ```
 
-```bash
-# pnjaodmkngahhkoihejjehlcdlnohgmp
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dpnjaodmkngahhkoihejjehlcdlnohgmp%26uc
-```
+  ## Save as MHTML 0.3.7
 
-## SuperCopy 超级复制 0.1.5
+  编辑并以MHTL/MHT(MIME HTML)存档格式保存活动标签或选定区域，以获得一个干净的单文件备份。
 
-一键破解禁止右键、破解禁止选择、破解禁止复制、破解禁止粘贴，启用复制，启用右键，启用选择，启用粘贴。
+  ID：ahgakckdonjmnpnegjcamhagackmjpei
 
-ID：onepmapfbjohnegdmfhndpefjkppbjkm
+  ```bash
+  # ahgakckdonjmnpnegjcamhagackmjpei
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dahgakckdonjmnpnegjcamhagackmjpei%26uc
+  ```
 
-```bash
-# onepmapfbjohnegdmfhndpefjkppbjkm
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Donepmapfbjohnegdmfhndpefjkppbjkm%26uc
-```
+  ## RSS Feed Reader 7.9.0
 
-## Tab Muter 1.4.2
+  Get a simple overview of your RSS and Atom feeds in the toolbar
 
-Re-enables the "Mute Tab" feature once found in Chrome itself.
+  ID：pnjaodmkngahhkoihejjehlcdlnohgmp
 
-单个网页标签静音🔇。
+  ```bash
+  # pnjaodmkngahhkoihejjehlcdlnohgmp
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dpnjaodmkngahhkoihejjehlcdlnohgmp%26uc
+  ```
 
-ID：bnclejfcblondkjliiblkojdeloomadd
+  ## SuperCopy 超级复制 0.1.5
 
-```bash
-# bnclejfcblondkjliiblkojdeloomadd
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dbnclejfcblondkjliiblkojdeloomadd%26uc
-```
+  一键破解禁止右键、破解禁止选择、破解禁止复制、破解禁止粘贴，启用复制，启用右键，启用选择，启用粘贴。
 
-## Wappalyzer - Technology profiler 6.10.24
+  ID：onepmapfbjohnegdmfhndpefjkppbjkm
 
-Identify web technologies 网站框架信息
+  ```bash
+  # onepmapfbjohnegdmfhndpefjkppbjkm
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Donepmapfbjohnegdmfhndpefjkppbjkm%26uc
+  ```
 
-ID：gppongmhjkpfnbhagpmjfkannfbllamg
+  ## Tab Muter 1.4.2
 
-```bash
-# gppongmhjkpfnbhagpmjfkannfbllamg
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dgppongmhjkpfnbhagpmjfkannfbllamg%26uc
-```
+  Re-enables the "Mute Tab" feature once found in Chrome itself.
 
-## Tampermonkey 4.16.1
+  单个网页标签静音🔇。
 
-The world's most popular userscript manager
+  ID：bnclejfcblondkjliiblkojdeloomadd
 
-ID：dhdgffkkebhmkfjojejmpbldmpobfkfo
+  ```bash
+  # bnclejfcblondkjliiblkojdeloomadd
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dbnclejfcblondkjliiblkojdeloomadd%26uc
+  ```
 
-```bash
-# dhdgffkkebhmkfjojejmpbldmpobfkfo
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Ddhdgffkkebhmkfjojejmpbldmpobfkfo%26uc
-```
+  ## Wappalyzer - Technology profiler 6.10.24
 
-## Tabbed Postman - REST Client 0.8.4.22
+  Identify web technologies 网站框架信息
 
-网页版postman，修改参数
+  ID：gppongmhjkpfnbhagpmjfkannfbllamg
 
-ID：coohjcphdfgbiolnekdpbcijmhambjff
+  ```bash
+  # gppongmhjkpfnbhagpmjfkannfbllamg
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dgppongmhjkpfnbhagpmjfkannfbllamg%26uc
+  ```
 
+  ## Tampermonkey 4.16.1
 
-```bash
-# coohjcphdfgbiolnekdpbcijmhambjff
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dcoohjcphdfgbiolnekdpbcijmhambjff%26uc
-```
+  The world's most popular userscript manager
 
-## WebSocket Test Client 0.2.0
+  ID：dhdgffkkebhmkfjojejmpbldmpobfkfo
 
-A Simple tool to help test WebSocket Service
+  ```bash
+  # dhdgffkkebhmkfjojejmpbldmpobfkfo
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Ddhdgffkkebhmkfjojejmpbldmpobfkfo%26uc
+  ```
 
-ID：fgponpodhbmadfljofbimhhlengambbn
+  ## Tabbed Postman - REST Client 0.8.4.22
 
-```bash
-# fgponpodhbmadfljofbimhhlengambbn
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dfgponpodhbmadfljofbimhhlengambbn%26uc
-```
+  网页版postman，修改参数
 
-## X-Forwarded-For Header 0.6.2
+  ID：coohjcphdfgbiolnekdpbcijmhambjff
 
-This extension allows you quickly to set the X-Forwarded-For HTTP Header
 
-ID：hkghghbnihliadkabmlcmcgmffllglin
+  ```bash
+  # coohjcphdfgbiolnekdpbcijmhambjff
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dcoohjcphdfgbiolnekdpbcijmhambjff%26uc
+  ```
 
-```bash
-# hkghghbnihliadkabmlcmcgmffllglin
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dhkghghbnihliadkabmlcmcgmffllglin%26uc
-```
+  ## WebSocket Test Client 0.2.0
 
-## XPath Helper 2.0.2
+  A Simple tool to help test WebSocket Service
 
-Extract, edit, and evaluate XPath queries with ease.
+  ID：fgponpodhbmadfljofbimhhlengambbn
 
-ID：hgimnogjllphhhkhlmebbmlgjoejdpjl
+  ```bash
+  # fgponpodhbmadfljofbimhhlengambbn
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dfgponpodhbmadfljofbimhhlengambbn%26uc
+  ```
 
-```bash
-# hgimnogjllphhhkhlmebbmlgjoejdpjl
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dhgimnogjllphhhkhlmebbmlgjoejdpjl%26uc
-```
+  ## X-Forwarded-For Header 0.6.2
 
-## 彩云小译 - 网页翻译插件 1.3.4
+  This extension allows you quickly to set the X-Forwarded-For HTTP Header
 
-彩云小译双语对照网页翻译插件，针对浏览器开发的一款网页翻译工具，一键高效获取母语阅读体验。
+  ID：hkghghbnihliadkabmlcmcgmffllglin
 
-ID：jmpepeebcbihafjjadogphmbgiffiajh
+  ```bash
+  # hkghghbnihliadkabmlcmcgmffllglin
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dhkghghbnihliadkabmlcmcgmffllglin%26uc
+  ```
 
-```bash
-# jmpepeebcbihafjjadogphmbgiffiajh
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Djmpepeebcbihafjjadogphmbgiffiajh%26uc
-```
+  ## XPath Helper 2.0.2
 
-## GitZip for github 1.0.0
+  Extract, edit, and evaluate XPath queries with ease.
 
-It can make the sub-directories and files of github repository as zip and download it
+  ID：hgimnogjllphhhkhlmebbmlgjoejdpjl
 
-ID：ffabmkklhbepgcgfonabamgnfafbdlkn
+  ```bash
+  # hgimnogjllphhhkhlmebbmlgjoejdpjl
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dhgimnogjllphhhkhlmebbmlgjoejdpjl%26uc
+  ```
 
-```bash
-# ffabmkklhbepgcgfonabamgnfafbdlkn
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dffabmkklhbepgcgfonabamgnfafbdlkn%26uc
-```
+  ## 彩云小译 - 网页翻译插件 1.3.4
 
+  彩云小译双语对照网页翻译插件，针对浏览器开发的一款网页翻译工具，一键高效获取母语阅读体验。
 
+  ID：jmpepeebcbihafjjadogphmbgiffiajh
 
-## FOFA Pro View 0.0.4
+  ```bash
+  # jmpepeebcbihafjjadogphmbgiffiajh
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Djmpepeebcbihafjjadogphmbgiffiajh%26uc
+  ```
 
-FOFA Pro view
+  ## GitZip for github 1.0.0
 
-ID：iadmijjfebdlnbinfghcgjlnepglmgih
+  It can make the sub-directories and files of github repository as zip and download it
 
-```bash
-# iadmijjfebdlnbinfghcgjlnepglmgih
-```
+  ID：ffabmkklhbepgcgfonabamgnfafbdlkn
 
-## Evernote Web Clipper 7.23.0
+  ```bash
+  # ffabmkklhbepgcgfonabamgnfafbdlkn
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dffabmkklhbepgcgfonabamgnfafbdlkn%26uc
+  ```
 
-使用Evernote扩展程序一键保存精彩网页内容到Evernote帐户。
 
-ID：pioclpoplcdbaefihamjohnefbikjilc
 
-```bash
-# pioclpoplcdbaefihamjohnefbikjilc
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dpioclpoplcdbaefihamjohnefbikjilc%26uc
-```
+  ## FOFA Pro View 0.0.4
 
-## WizClipper 4.0.10
+  FOFA Pro view
 
-WizClipper 为知笔记插件：快速保存网页文章到笔记。
+  ID：iadmijjfebdlnbinfghcgjlnepglmgih
 
-ID：jfanfpmalehkemdiiebjljddhgojhfab
+  ```bash
+  # iadmijjfebdlnbinfghcgjlnepglmgih
+  ```
 
-```bash
-# jfanfpmalehkemdiiebjljddhgojhfab
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Djfanfpmalehkemdiiebjljddhgojhfab%26uc
-```
+  ## Evernote Web Clipper 7.23.0
 
-## DEPRECATED Secure Shell App 0.40
+  使用Evernote扩展程序一键保存精彩网页内容到Evernote帐户。
 
-(DEPRECATED: USE THE EXTENSION) Terminal emulator and SSH and SFTP client.
+  ID：pioclpoplcdbaefihamjohnefbikjilc
 
-ID：pnhechapfaindjhompbnflcldabbghjo
+  ```bash
+  # pioclpoplcdbaefihamjohnefbikjilc
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dpioclpoplcdbaefihamjohnefbikjilc%26uc
+  ```
 
-```bash
-# pnhechapfaindjhompbnflcldabbghjo
-https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dpnhechapfaindjhompbnflcldabbghjo%26uc
-```
+  ## WizClipper 4.0.10
+
+  WizClipper 为知笔记插件：快速保存网页文章到笔记。
+
+  ID：jfanfpmalehkemdiiebjljddhgojhfab
+
+  ```bash
+  # jfanfpmalehkemdiiebjljddhgojhfab
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Djfanfpmalehkemdiiebjljddhgojhfab%26uc
+  ```
+
+  ## DEPRECATED Secure Shell App 0.40
+
+  (DEPRECATED: USE THE EXTENSION) Terminal emulator and SSH and SFTP client.
+
+  ID：pnhechapfaindjhompbnflcldabbghjo
+
+  ```bash
+  # pnhechapfaindjhompbnflcldabbghjo
+  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=101.0.4951.54&acceptformat=crx2%2Ccrx3&x=id%3Dpnhechapfaindjhompbnflcldabbghjo%26uc
+  ```
