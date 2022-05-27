@@ -22,19 +22,17 @@
 
   离线下载插件模板URL：
 
+```bash
+https://clients2.google.com/service/update2/crx?response=redirect&prodversion=`<ChromeVer>`&acceptformat=crx2%2Ccrx3&x=id%3D`<ExtId>`%26uc
+```
 
-
-  https://clients2.google.com/service/update2/crx?response=redirect&prodversion=`<ChromeVer>`&acceptformat=crx2%2Ccrx3&x=id%3D`<ExtId>`%26uc
-
-
-
-  将<ChromeVer>、<ExtId>替换成正确值。
+  将**<ChromeVer>**、**<ExtId>**替换成正确值。
 
   例如:
 
+  ```bash
   https://clients2.google.com/service/update2/crx?response=redirect&prodversion=`101.0.4951.54`&acceptformat=crx2%2Ccrx3&x=id%3D`padekgcemlokbadohgkifijomclgjgif`%26uc
-
-
+  ```
 
   ## Proxy SwitchyOmega 2.5.21
 
